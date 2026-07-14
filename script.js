@@ -4,6 +4,7 @@ const number2Input = document.getElementById('num2');
 const calculateButton = document.getElementById('calcBtn');
 const resultDiv = document.getElementById('result');
 const stringResultDiv = document.getElementById('stringResult');
+const showDiv = document.getElementById('show');
 
 calculateButton.addEventListener('click', function() {
     const val1 = number1Input.value;
@@ -118,3 +119,11 @@ todoInput.addEventListener('keypress', (e) => {
 
 // Initial render of tasks when the page loads
 renderTasks();
+
+
+
+function show() {
+    showDiv.innerText =JSON.stringify(tasks);
+}
+
+show();
