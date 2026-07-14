@@ -80,6 +80,7 @@ function renderTasks() {
         li.appendChild(span);
         li.appendChild(deleteBtn);
         todoList.appendChild(li);
+        show();
     });
 }
 
@@ -125,5 +126,3 @@ renderTasks();
 function show() {
     showDiv.innerText =JSON.stringify(tasks);
 }
-
-show();
